@@ -24,6 +24,7 @@ class TrustWeb3Provider extends BaseProvider {
     this.callbacks = new Map();
     this.wrapResults = new Map();
     this.isMetaMask = !!config.ethereum.isMetaMask;
+    this.isOnboardWallet = !!config.ethereum.isOnboardWallet;
 
     this.emitConnect(this.chainId);
   }
